@@ -23,21 +23,15 @@ main{
 
 #parent{
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .contents{
     border: 3px solid rgb(238,204,204);
-    /* flex-basis: 25%; */
+    flex-basis: 25%; 
     padding: 10px 15px;
     margin: 20px 0;
     text-align: center;
-    /* justify-content: center; */
-}
-
-.contents{
-    flex-basis: 25%;
 }
 
 h2{
@@ -55,15 +49,14 @@ h2::before{
     color: rgb(97,206,249);
 }
 
-.img{
+.contents img{
     margin: 10px 0;
-    justify-content: 70%;
+    width: 70%;
 }
 
 footer{
     background-color: rgb(244,79,79);
     text-align: center;
-    /* justify-content: center; */
 }
 
 a{
@@ -86,7 +79,8 @@ a:hover{
     p{
         font-size: 25px;
     }
-    .parent{
-        display: block;
+    #parent{
+        display: flex;
+        flex-direction: column;
     }
 } 
